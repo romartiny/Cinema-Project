@@ -104,6 +104,16 @@ input {
     margin-right: 2rem;
 }
 
+.header__nav-link {
+    transition: 1s;
+    color: #FFFFFF;
+}
+
+.header__nav-link:hover {
+    transform: scale(1.2);
+    color: #989898;
+}
+
 .header__find {
     width: 33rem;
     height: 4.1rem;
@@ -225,6 +235,13 @@ input {
     border-left: 2.5rem solid #FFFFFF;
     border-bottom: 1.5rem solid transparent;
     border-radius: 0.2rem;
+    margin-left: 0.5rem;
+    transition: 0.7s;
+}
+
+.button-play:hover {
+    transform: scale(1.2);
+    color: #989898;
 }
 
 .title {
