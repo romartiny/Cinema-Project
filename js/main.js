@@ -1,5 +1,6 @@
 function refreshTime() {
     let today = new Date();
+
     switch(new Date().getMonth()) {
         case 1:
             cmonth = 'January';
@@ -40,7 +41,15 @@ function refreshTime() {
         default:
             cmonth = "You have 13 month year?";
     }
-    document.getElementById('time').innerHTML = today.getHours() + ":" +  today.getMinutes();
+
+    let minutes = today.getMinutes();
+    if (minutes < 10) {
+        cmin = '0' + '' + minutes;
+    } else {
+        cmin = minutes;
+    }
+
+    document.getElementById('time').innerHTML = today.getHours() + ":" +  cmin;
     document.getElementById('date').innerHTML = today.getDate() + ' ' + cmonth;
 
 }
