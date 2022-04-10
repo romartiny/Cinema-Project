@@ -1,6 +1,3 @@
-var timeDisplay = document.getElementById("time");
-
-
 function refreshTime() {
     let today = new Date();
     switch(new Date().getMonth()) {
